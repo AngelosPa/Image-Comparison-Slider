@@ -7,11 +7,7 @@
 h3 {
   color: white;
 }
-.loadthing {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+
 body {
   display: flex;
   justify-content: center;
@@ -262,10 +258,10 @@ input[type="range"]::-moz-range-thumb {
   }
 }
 .ena {
-  display: none;
+  opacity: 0;
 }
 .dyo {
-  display: none;
+  opacity: 0;
 }
 .input {
   display: none;
