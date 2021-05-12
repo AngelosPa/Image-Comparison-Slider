@@ -1,11 +1,13 @@
 const slider = document.querySelector(".slider input");
-const img = document.querySelector("image-2");
+const img = document.querySelector(".image-2");
+console.log(img);
+
 slider.oninput = () => {
   let slidervali = slider.value;
 
   img.style.opacity = slidervali + "%";
 };
-
+// use a promise in order to give 3 seconds to load the picture (or?..)
 const checkPromise = new Promise((resolve, reject) => {
   let x = true;
   if (x) {
@@ -40,7 +42,6 @@ let ms = 3000;
 function doSomething() {
   let text = document.querySelector("h3");
   text.innerHTML = ``;
-
   let wheel = document.querySelector("#tria");
   let inputball = document.querySelector(".input");
   inputball.classList.remove("input");
